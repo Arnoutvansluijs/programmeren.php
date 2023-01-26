@@ -8,15 +8,20 @@
 </head>
 <body>
 <?php
-    date_default_timezone_set("Europe/Amsterdam");
-    $today = date("j, F, Y");
-    echo "vandaag is het: $today";
+$hour = date("H");
 
-    echo "<br?";
+if ($hour == 6 || $hour == 7 || $hour == 8 || $hour == 9 || $hour == 10 || $hour == 11 || $hour == 12 ){
+    echo "het is ochtend";
+} elseif($hour == 13 || $hour == 14 || $hour == 15 || $hour == 16 || $hour == 17 || $hour == 18){
+    echo "het is middag";
+}elseif($hour == 19 || $hour == 20 || $hour == 21 || $hour == 22 || $hour == 23 || $hour == 24){
+    echo "het is avond";
+}else{
+    echo "het is nacht";
+}
 
-   $day = date("z");
-   echo "vandaag is het de $day e van het jaar";
-    
-    ?>
+
+
+?>
 </body>
 </html>
