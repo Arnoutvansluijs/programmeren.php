@@ -37,19 +37,40 @@ echo $resultaat;
 ?>
 
 <?php
-$number = "40";
-$number2 = "60";
+        $varOne = 1;
+        $varTwo = 2;
 
-if ($number >= $number2) {
-     $number = $number2 * 2 + $number2;
-     echo "$number";
-}
-else{
-    $number2 = $number2 * 2 + $number;
+        if ($varOne > $varTwo) {
+
+        $result = ($varOne * 2) + $varTwo;
+        }
+        else {
+            $result = ($varTwo * 2) + $varOne;
+        }
+        echo "de waarde van de eerste variable is: $varOne<br>";
+        echo "de waarde van de tweede variable is: ".$varTwo. "<br>";
+        echo "het resultaat van 2 x de grootste plus de kleinste ";
+        echo "levert op de waarde : $result<br>";
+    ?>
     
-    echo "$number2";
-};
-?>
+    <?php
+        $prijs = 50;
+        if( $prijs > 150){
+                $uitkomst = $prijs * 1.19;
+                echo "oude prijs is: $prijs.  ";  echo "nieuwe prijs is met 19%: $uitkomst";
+        }
+
+        elseif( $prijs < 55){
+                $uitkomst = $prijs * 1.11;
+                echo "oude prijs is: $prijs.  ";  echo "nieuwe prijs is met 11%: $uitkomst";
+        }
+        else {
+            $uitkomst = $prijs * 1.16;
+            echo "oude prijs is: $prijs.  ";  echo "nieuwe prijs is met 16%: $uitkomst";
+    }
+
+    ?>
+
 
 
 </body>
