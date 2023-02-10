@@ -8,9 +8,17 @@
 </head>
 <body>
 
+<form action="" method="POST">
+    <label for="input">Welke tafel wil je hebben?</label>
+    <input type="text" name="tafels">
+    <input type="submit" name="verzenden">
+</form>
+
+
 <?php
 
-$number = 12;
+if(isset($_POST['verzenden'])) {
+$number = $_POST["tafels"];
 
 echo "<table border='1'>";
 
@@ -31,7 +39,7 @@ for($i = 1; $i <=10; $i++) {
 echo "</tr>";
 } 
 echo "</table>";
-
+}
 
 
 
