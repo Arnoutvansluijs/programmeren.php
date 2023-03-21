@@ -15,7 +15,7 @@
 <input type="radio" name="stempas" value="0">
 <label>stempas</label>
 <input type="radio" name="stempas" value="1">
-<label>geen stempas</label>
+<label>geen stempas.</label>
 <br><br>
 <button type="submit" name="submit">indienen</button>
 
